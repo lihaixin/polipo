@@ -4,7 +4,9 @@ polipo:
     proxyAddress=0.0.0.0
     proxyPort=8123
     authCredentials=username:password
-    socksParentProxy=1.2.3.4:8123
+    allowedPorts=1-65535
+    tunnelAllowedPorts=1-65525
+    #    socksParentProxy=1.2.3.4:8123
   ports:
     - "8123:8123"
   restart: always
