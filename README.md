@@ -15,7 +15,9 @@ polipo:
     proxyAddress=0.0.0.0
     proxyPort=8123
     authCredentials=username:password
-    socksParentProxy=ParentServerIP:8123
+    allowedPorts=1-65535
+    tunnelAllowedPorts=1-65525
+ #  socksParentProxy=ParentServerIP:8123
   ports:
     - "8123:8123"
   restart: always
@@ -32,7 +34,7 @@ OR
 $ docker run -d --restart=always --name=polipo -p 8123:8123 lihaixin/polipo proxyAddress=0.0.0.0  authCredentials=username:password
 ```
 
-more parameter use
+More Parameter use
 
 ```bash
 $ docker run --rm lihaixin/polipo --help
