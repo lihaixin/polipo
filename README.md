@@ -46,4 +46,3 @@ $ wget -e use_proxy=yes -e proxy-user=username -e proxy-password=password -e htt
 
 [1]: https://www.irif.univ-paris-diderot.fr/~jch/software/polipo/
 
-![wechat]()
